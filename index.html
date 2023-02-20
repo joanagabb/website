@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <title>Starborn Gaming</title>
+    <title>Starborn Studios</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,8 +11,9 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
+            <a href="index.html"><img src="images/logo.png" class="logoImage"></a>
+            <div class="nav-links" id="navLinks">
+                <a><img src="images/close_icon.png" class="closeIcon" onclick="hideMenu()"></a>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -21,6 +22,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <a><img src="images/menu_icon.png" class="menuIcon" onclick="showMenu()"></a>
         </nav>
         <div class="text-box">
         <h1>MAKING EVEN BETTER GAMES</h1>
@@ -28,5 +30,39 @@
         <a href="": class="visit-btn">Visit us to know more</a>
         </div>
     </section>
+
+    <section class="outsourcing">
+        <h1>Outsourcing</h1>
+        <p>Besides developing our own games, we in Starborn also offer the best of our work to the companies we work with.</p>
+        <div class="row">
+            <div class="outsourcing-col">
+                <h3>Concept Art</h3>
+                <a img></a>
+                <p>text</p>
+            </div> 
+            <div class="outsourcing-col">
+                <h3>Animation</h3>
+                <p>text</p>
+            </div>
+            <div class="outsourcing-col">
+                <h3>UI Art</h3>
+                <p>text</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!------javascript for header toggle menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
 </body>
 </html>
